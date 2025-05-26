@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Advanced Username &amp; Password Generator</title>
+<link href="https://raw.githubusercontent.com/IIHUII/Luna-passowrd-username-site/refs/heads/main/picis/alya-kujou.gif" rel="icon" type="image/gif"/>
+
+<link href="css/style.css" rel="stylesheet"/></head>
+<body>
+<div class="container">
+<h1>luna - user name strong password</h1>
+<p class="subtitle">Generate unique usernames and strong passwords</p>
+<div class="tab-buttons">
+<button class="tab-btn active" data-tab="username-tab">Usernames</button>
+<button class="tab-btn password-tab" data-tab="password-tab">Passwords</button>
+</div>
+<!-- Username Generator Tab -->
+<div class="tab-content active" id="username-tab">
+<div class="platform-selector">
+<button class="platform-btn active" id="tiktokBtn">
+<span class="platform-icon">🎵</span>TikTok
+        </button>
+<button class="platform-btn" id="instaBtn">
+<span class="platform-icon">📷</span>Instagram
+        </button>
+<button class="platform-btn" id="twitterBtn">
+<span class="platform-icon">🐦</span>Twitter
+        </button>
+<button class="platform-btn" id="youtubeBtn">
+<span class="platform-icon">▶️</span>YouTube
+        </button>
+<button class="platform-btn" id="discordBtn">
+<span class="platform-icon">💬</span>Discord
+        </button>
+</div>
+<div class="style-selector">
+<button class="style-btn active" id="normalBtn">Normal</button>
+<button class="style-btn" id="epicBtn">Epic</button>
+<button class="style-btn" id="legendaryBtn">Legendary</button>
+</div>
+<div class="control-group">
+<select id="lengthSelect">
+<option value="2">2 characters</option>
+<option value="3">3 characters</option>
+<option selected="" value="4">4 characters</option>
+<option value="5">5 characters</option>
+<option value="6">6 characters</option>
+<option value="7">7 characters</option>
+<option value="8">8 characters</option>
+</select>
+<select id="countSelect">
+<option value="50">50 usernames</option>
+<option selected="" value="100">100 usernames</option>
+<option value="200">200 usernames</option>
+<option value="500">500 usernames</option>
+</select>
+<button id="generateBtn">Generate Usernames</button>
+</div>
+<div class="loading" id="loading">
+<div class="spinner"></div>
+<p class="loading-text">Generating creative usernames...</p>
+</div>
+<div class="stats" id="stats"></div>
+<div class="results-container">
+<div class="results" id="results"></div>
+</div>
+<div class="copied-message" id="copiedMessage">✓ Copied to clipboard!</div>
+</div>
+<!-- Password Generator Tab -->
+<div class="tab-content" id="password-tab">
+<div class="style-selector">
+<button class="style-btn active" id="passNormalBtn">Normal (14 chars)</button>
+<button class="style-btn" id="passEpicBtn">Epic (18 chars)</button>
+<button class="style-btn" id="passLegendaryBtn">Legendary (30 chars)</button>
+</div>
+<div class="control-group">
+<select id="passCountSelect">
+<option value="5">5 passwords</option>
+<option selected="" value="10">10 passwords</option>
+<option value="20">20 passwords</option>
+</select>
+<button class="password-btn" id="generatePassBtn">Generate Passwords</button>
+</div>
+<div class="loading" id="passLoading">
+<div class="spinner password-spinner"></div>
+<p class="loading-text">Generating secure passwords...</p>
+</div>
+<div class="stats" id="passStats"></div>
+<div class="results-container password-results">
+<div class="results" id="passResults"></div>
+</div>
+<div class="copied-message password-copied" id="passCopiedMessage">✓ Copied to clipboard!</div>
+</div>
+</div>
+
+<script src="js/main.js"></script></body>
+</html>
